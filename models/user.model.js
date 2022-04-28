@@ -25,7 +25,8 @@ const User = sequelize.define("user", {
   },
   status: {
     type: DataTypes.STRING,
-  },
+    defaultValue: "available"
+  }
 });
 
 module.export = { User };
